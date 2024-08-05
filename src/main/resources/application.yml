@@ -3,11 +3,14 @@ spring:
     name: agregadordeinvestimentos
 
   datasource:
-    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/agregadordb
+    url: jdbc:postgresql://${POSTGRES_HOST:localhost}:5432/agregadordb
     username: agregador
     password: agregador123
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    driver-class-name: org.postgresql.Driver
 
   jpa:
     hibernate:
       ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
