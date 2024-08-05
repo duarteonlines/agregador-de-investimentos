@@ -1,4 +1,4 @@
-package io.oliveiraordep.agregadordeinvestimentos.entities;
+package io.oliveiraordep.agregadordeinvestimentos.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
