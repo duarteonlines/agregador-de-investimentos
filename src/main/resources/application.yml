@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: agregadordeinvestimentos
+
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/agregadordb
+    username: agregador
+    password: agregador123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
